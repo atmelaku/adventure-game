@@ -166,7 +166,7 @@ class evaluatingVariableQuestion1(numbers):
             return "evaluating_Variables_Question1"
 class multiplyingPositiveNumbersQuestion1(numbers):
     def enter(self):
-        print("well come to the second simple math knowlodge test. the second section is going to be evatuating some problems using multiplication oprators")
+        print("well come to the second simple math knowlodge test. the second section is going to be evatuating some problems using multiplication oprator")
         print("let's begin!")
         print(f"what is the productof {self.ten} and {self.zero}?")
         Answer = input("> ")
