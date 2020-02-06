@@ -1,4 +1,4 @@
-import product
+
 class items(object):
     def __init__(self, ten, one, three, x, y):
         self.ten = 10
@@ -153,13 +153,16 @@ class evaluatingVariablesQuestion1(items):
         Answer = input("> ")
         if Answer == "0":
             print("nice work!. try again if you want to.")
-            return 'finished'
+            return 'finish_Game'
         elif Answer == "10":
             print("you broke the rule")
             return "evaluating_Variables_Question1"
         else:
             print("wrong")
             return "evaluating_Variables_Question1"
+class finishGame(object):
+    def enter(self):
+        exit(1)
 class Map(object):
     parts = {
     'items': items(10, 1, 3, 'x', 'y'),
@@ -172,7 +175,8 @@ class Map(object):
     'multiplying_Negative_Numbers_Question2': multiplyingNegativeNumbersQuestion2(10, 1, 3, 'x', 'y'),
     'multiplying_Negative_Numbers_Question3': multiplyingNegativeNumbersQuestion3(10, 1, 3, 'x', 'y'),
     'multiplying_Variables_Question1': multiplyingVariablesQuestion1(10, 1, 3, 'x', 'y'),
-    'evaluating_Variables_Question1': evaluatingVariablesQuestion1(10, 1, 3, 'x', 'y')
+    'evaluating_Variables_Question1': evaluatingVariablesQuestion1(10, 1, 3, 'x', 'y'),
+    'finish_Game': finishGame()
     }
     def __init__(self, start_part):
         self.start_part = start_part
